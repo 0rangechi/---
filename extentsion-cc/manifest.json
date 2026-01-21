@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "URL Sequence Player",
+    "version": "1.2",
+    "description": "自动记录、导出并顺序播放网页视频",
+    "permissions": [
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}

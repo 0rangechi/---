@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 250px; padding: 10px; font-family: sans-serif; }
+    button { width: 100%; margin: 5px 0; padding: 8px; cursor: pointer; }
+    #status { font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <h3>Cc助手</h3>
+  <p>1.记录所有标签页的链接并导出到json文件</p>
+  <button id="exportBtn">记录并导出</button>
+  <hr>
+  <p>2.上传网页链接的json文件并开始自动播放,请注意开始播放后需要一直保持浏览器是当前选中的窗口。</p>
+  <input type="file" id="fileInput" accept=".json">
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
